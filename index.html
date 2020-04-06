@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!--jQuery library--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--Latest compiled and minified JavaScript--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+   
+.panel{
+    height:30em;
+    background-color: white;
+}
+#part1{
+    background-color: background;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: white;
+    width: 26em;
+    height: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+input{
+    width: 26em;
+    height: 2em;
+}
+a{color: black;
+position: relative;
+}
+#cross{
+    float: right;
+    color: white;
+    background-color: background;
+    margin: 0em,0em,0em,0em;
+    padding: 0em;
+    border-color: background;
+}
+#icon{float: left;}
+.btn{width: 26em;
+       height: 2em;
+      
+       font-family: sans-serif;
+        
+        padding-bottom: 1em;
+        padding-top: 0.5em;}
+
+#forget{
+    color: black;
+}
+#Register{
+    color: black;
+}
+@media(min-widt:320px){
+    .btn{
+        width:320px;
+    }
+}
+@media(min-widt:481px){
+    .btn{
+        width:481px;
+    }
+}
+    </style>
+    <body>
+    <center>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-5">
+                    <div class="panel panel-primary">
+                        <div  class="panel-heading">
+                            <header>
+                                Sign in
+                                <div id='cross'><button class="btn-s btn-primary"style="color: white;">X</button></div></header>
+                                
+                        </div>
+                        <div class="panel-body">
+                            <form action="#">
+                                <div class="input-group">
+                                    <label for="id">
+                                        <input type="text" class="form-control" name="id" placeholder="mail@example.com" required="true" pattern="[0-9]{12}">
+                                 
+                                    </label><span class="glyphicon glyphicon-user" ></span>
+                                    </div>
+                                <div class="input-group">
+                                    <label for="Password">
+                                        <input type="password" class="form-control" name="password" placeholder="password" required="true" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                                        </label><span class="glyphicon glyphicon-lock" ></span>
+                                </div>
+                                <div class="input-group">
+                                    <button class="btn btn-primary" style="background: cornflowerblue;color: white;">Sign in</button>
+                            <div style="background: white;"><a href="#">Forgot your password? </a>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;  <a href="#">Register</a></div>
+                                    <div><br><br></div> 
+                            <footer>
+                            <div><button class="btn btn-block" style="background: cornflowerblue;color: white;">f</button></div> 
+                            <div><button class="btn btn-block" style="background: lightcoral;color: white;font-family: cursive;">g</button></div>
+                            <br><br><br><div><button class="btn btn-block" style="background-color: greenyellow;color: white; font-size: small;"> < EPAM LOGIN ></button></div>
+                            </footer>
+                            </form></div> </div></div>
+                </div>
+            </div>
+        </div>
+                            
+    </center>
+    </body>
+</html>
